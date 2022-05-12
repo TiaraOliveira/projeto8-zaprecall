@@ -1,0 +1,36 @@
+.telaInicial{
+    background-color: #FB6B6B;
+    color: #ffffff;
+    height: 667px;
+}
+
+.telaInicial button{
+    background-color: #ffffff;
+    color: #D79000;
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    width: 246px;
+    height: 54px;
+    background: #FFFFFF;
+    border: 1px solid #D70900;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.telaInicial h1{
+    width: 257px;
+    height: 59px;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
