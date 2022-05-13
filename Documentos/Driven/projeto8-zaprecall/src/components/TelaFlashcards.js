@@ -1,10 +1,15 @@
+import Flashcards from "./Flashcards"
+
 export default function TelaFlashcards(){
     return(
         <>
-          <header>
-              <img src=".logo" alt="" />
-              <h1>ZapRecall</h1>
-          </header>
+            <div className="Corpo">
+                <header className="TelaFlash">
+                    <img src="assets/images/logo.png" alt="" />
+                    <h1>ZapRecall</h1>
+                </header>
+            <Flashcards />
+            </div>
         </>
     )
 }
