@@ -3,10 +3,8 @@ import Questao from "./Questao"
 import Resposta from "./Resposta"
 
 export default function Flashcard(){
-    const [virada, setVirada] = react.useState("up")
+    const [text, setText] = react.useState("up")
     return(
-        <div  onClick={()=> setVirada("down")}> 
-            {virada === 'up' ? <Questao setVirada={setVirada} />: <Resposta />}
-        </div>
+       <Questao text={<Questao/>} Onclick={()=> setext(<Resposta/>)}/>
     )
 }
