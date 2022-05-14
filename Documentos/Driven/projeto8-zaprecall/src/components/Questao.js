@@ -1,17 +1,17 @@
 import react from "react";
-function Question({props,setVirada}){
+function Question({questao, setVirada}){
     return(
      <div  onClick={()=> setVirada("down")}>
-        <h4>{props.questao}</h4>
+        <h4>{questao}</h4>
         <img src="assets/images/setinha.png" alt="" />
     </div>
     )
   }
 
-function Resposta(props ){
+function Resposta({answer} ){
     return(
         <div className="Resposta">
-                <h4> {props.answer}</h4>
+                <h4> {answer}</h4>
         </div>
     )
 }
