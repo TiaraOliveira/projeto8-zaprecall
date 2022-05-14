@@ -79,6 +79,10 @@
 .Corpo{
     background-color: #FB6B6B;
     height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .Cartas{
@@ -121,6 +125,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
+    color: #D70900;
  }
 
  .root{
@@ -142,4 +147,32 @@
      justify-content: center;
      text-align: left;
      margin-right: 10px;
+ }
+
+
+ .footer{
+     height: 50px;
+     background-color: #ffffff;
+ }
+
+ .choise{
+    width: 85.17px;
+    height: 37.17px;
+    border-radius: 5px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    color: #ffffff;
+ }
+
+ .red{
+     background-color: #ff3030;
+ }
+ .yellow{
+     background-color: #ff922e;
+ }
+ .green{
+     background-color: #2fbe34;
  }

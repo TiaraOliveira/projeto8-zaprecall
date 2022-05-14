@@ -1,7 +1,13 @@
-export default function Resposta(){
+export default function Resposta({children}){
     return(
-        <div className="Resposta">
-                <h4> Uma extensão de linguagem do JavaScript</h4>
-        </div>
+    
+         <>
+                <h4> Issoooo aiiii</h4>
+                <div className="choise red">Não lembrei</div>
+                <div className="choise yellow">Quase lembrei</div>
+                <div className="choise green">Zap!!!</div>
+        </>
+        
+       
     )
 }
