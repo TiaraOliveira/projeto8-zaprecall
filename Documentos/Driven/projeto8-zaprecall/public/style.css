@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+  }
+
 .telaInicial{
     background-color: #FB6B6B;
     color: #ffffff;
@@ -107,9 +111,9 @@
     margin-top: 20px;
 
 }
- .Resposta, .pergunta{
+.pergunta{
     height: 131px;
-    width: 299px;
+    width: 330px;
     background-color: #ffffD4;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
@@ -117,18 +121,7 @@
 
  }
 
- .Resposta h4{
-     border-top: 10px;
-     border-left: 10px;
-    font-family: 'Recursive';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    color: #D70900;
- }
-
- .root{
+.root{
      background-color: #FB6B6B;
  }
 
@@ -141,7 +134,7 @@
 
  .pergunta h4{
      position: absolute;
-     top: 30px;
+     top: 20px;
      left: 30px;
      display: flex;
      justify-content: center;
@@ -150,20 +143,34 @@
  }
 
 
- .footer{
-     height: 50px;
-     background-color: #ffffff;
- }
-
- .choise{
+ .base{
+     height: 115px;
+     width: 100%;
+     background-color: #FFFFFF;
+     position: fixed;
+     bottom: 0;
+     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin-top: 200px;
+}
+.escolhas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+}
+ .choise div{ 
     width: 85.17px;
     height: 37.17px;
     border-radius: 5px;
     margin-left: 5px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    justify-content: center;
+    
     color: #ffffff;
  }
 
@@ -175,4 +182,65 @@
  }
  .green{
      background-color: #2fbe34;
+ }
+
+ .carta{
+     background-color: #ffffff;
+     height: 91px;
+     width: 330px;
+     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+     border-radius: 5px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     text-align: center;
+     position: relative;
+     margin-top: 20px;
+     font-family: 'Recursive';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 19px;
+     padding: 15px;
+ }
+
+ .questionario{
+     margin-top: 320px;
+     margin-bottom: 350px;
+ }
+
+ .respondida{
+    background-color: #ffffff;
+    height: 91px;
+    width: 330px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+    text-decoration-line: line-through;
+    color: #ff3030;
+    padding: 20px;
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+ }
+ .errada{
+    color: #ff3030;
+ }
+
+ .certa{
+    color: #2FBE34;
+ }
+
+ .quase{
+    color: #FF922E;
+ }
+ .baseicons{
+     display: flex;
  }

@@ -6,11 +6,9 @@ export default function App(){
     const [tela, setTela] = react.useState("telaInicial")
 
    
-
-
     return(
         <div>
-            {tela === 'do' ? <Init setTela={setTela} />: <TelaFlashcards />}
+            {tela === 'up' ? <Init setTela={setTela} />: <TelaFlashcards />}
         </div>
     )
 
