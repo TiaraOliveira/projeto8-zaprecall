@@ -36,9 +36,9 @@ function RespostaErrada(){
   )} if (virada === "questão"){
     return(
       <>
-      <div  className="pergunta" onClick={()=> setVirada("resposta")}>
+      <div  className="pergunta" >
         <h4>{questao}</h4>
-        <img src="assets/images/setinha.png" alt=""  />
+        <img src="assets/images/setinha.png" alt="" onClick={()=> setVirada("resposta")} />
       </div>
      </>
     )}
