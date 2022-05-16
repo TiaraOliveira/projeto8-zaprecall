@@ -244,3 +244,10 @@
  .baseicons{
      display: flex;
  }
+
+ .fimjogo{
+     display: flex;
+ }
+ .fimjogo img{
+     margin-right: 5px;
+ }

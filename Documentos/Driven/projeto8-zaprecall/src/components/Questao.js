@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function Question({index, questao, answers, contador, setcontador, tamanho, setFrase, setIcone, Icone}){
+export default function Question({index, questao, answers, contador, setcontador, setIcone, Icone, setIncorreta, Incorreta}){
   const[virada, setVirada]=React.useState("carta")
   
   function RespostaCerta(){
@@ -8,6 +8,7 @@ export default function Question({index, questao, answers, contador, setcontador
     setVirada("certa")
     const newIcone = [...Icone,  <div  className="certa" > <ion-icon name="checkmark-circle"></ion-icon>  </div>]
     setIcone(newIcone)
+    
   }
 function RespostaQuase(){
   setcontador(contador+1)
@@ -20,6 +21,7 @@ function RespostaErrada(){
   setVirada("errada")
   const newIcone = [...Icone, <div  className="errada" >  <ion-icon name="close-circle"></ion-icon></div>]
   setIcone(newIcone)
+  setIncorreta(Incorreta+1)
 }
     if(virada === "carta"){
       return(

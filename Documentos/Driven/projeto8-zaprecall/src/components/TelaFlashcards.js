@@ -1,5 +1,6 @@
 import React from "react"
 import Questao from "./Questao"
+import Footer from "./Footer";
 
 function comparador() {
     return Math.random() - 0.5;
@@ -15,10 +16,11 @@ function comparador() {
     questoes.sort(comparador);
     const tamanho = questoes.length
 
-export default function TelaFlashcards(){
+export default function TelaFlashcards({setTela}){
     const[contador, setcontador]=React.useState(0)
-    const[frase, setFrase]=React.useState("")
+    
     const[Icone, setIcone]=React.useState("")
+    const[Incorreta, setIncorreta]=React.useState(0)
 
     return(
         
@@ -31,14 +33,13 @@ export default function TelaFlashcards(){
                 <div className="questionario">
                 {questoes.map((questoes, index) => <Questao index={index + 1} questao={questoes.questao}  answers={questoes.answer} 
                                                                 contador = {contador} setcontador={setcontador} 
-                                                                tamanho={tamanho}  setFrase={setFrase}  
-                                                                setIcone={setIcone}         Icone={Icone}                                 
+                                                                tamanho={tamanho}  
+                                                                setIcone={setIcone}         Icone={Icone}    
+                                                                setIncorreta={setIncorreta}  Incorreta={Incorreta}                           
                                                                 />)}
               </div>
               <div className="base">
-               <h4>{frase}</h4>
-               <div>{contador}/{questoes.length} Concluídos</div>
-              <div className="baseicons">{Icone}</div>
+               <Footer contador = {contador} tamanho={tamanho} Icone={Icone}  Incorreta={Incorreta}  setTela={setTela} />
               
                </div>
             </div>

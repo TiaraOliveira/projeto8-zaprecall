@@ -8,7 +8,7 @@ export default function App(){
    
     return(
         <div>
-            {tela === 'up' ? <Init setTela={setTela} />: <TelaFlashcards />}
+            {tela === 'telaInicial' ? <Init setTela={setTela} />: <TelaFlashcards setTela={setTela} />}
         </div>
     )
 
