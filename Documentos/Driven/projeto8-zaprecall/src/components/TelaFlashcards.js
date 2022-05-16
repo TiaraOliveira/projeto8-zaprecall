@@ -10,6 +10,10 @@ function comparador() {
     { questao: "O React é __", answer: "uma biblioteca JavaScript para construção de interfaces"},
     { questao: "Componentes devem iniciar com __", answer: "letra maiúscula"},
     { questao: "Podemos colocar __ dentro do JSX", answer:"expressões"},
+    { questao: "O ReactDOM nos ajuda __", answer:"interagindo com a DOM para colocar componentes React na mesma"},
+    { questao: "Usamos o npm para __", answer:"gerenciar os pacotes necessários e suas dependências"},
+    { questao: "Usamos props para __", answer:"passar diferentes informações para componentes "},
+    { questao: "Usamos estado (state) para __", answer:"dizer para o React quais informações quando atualizadas devem renderizar a tela novamente"}
     
     ]
     

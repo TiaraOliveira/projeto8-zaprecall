@@ -73,11 +73,7 @@
     top: 0;
     width: 100%;
     z-index: 1;
-}
-
-.TelaFlash img{
-    width:52px;
-    height:60px
+    margin-bottom: 10px;
 }
 
 .Corpo{
@@ -205,8 +201,13 @@
  }
 
  .questionario{
-     margin-top: 320px;
-     margin-bottom: 350px;
+     margin-top: 120px;
+     height: 100%;
+     margin-bottom: 130px;
+     overflow-y: scroll;
+     scrollbar-width: none;
+     
+     
  }
 
  .respondida{
@@ -251,3 +252,13 @@
  .fimjogo img{
      margin-right: 5px;
  }
+
+ button {
+
+    background:#FB6B6B;
+    border-radius: 5px;
+    border: 1px solid #D70900;
+    color: #ffffff;
+    height: 32px;
+    width: 167px;
+}
