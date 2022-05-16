@@ -209,6 +209,10 @@
      
      
  }
+ ::-webkit-scrollbar{
+    width: 0;
+    Background: transparent;
+}
 
  .respondida{
     background-color: #ffffff;
